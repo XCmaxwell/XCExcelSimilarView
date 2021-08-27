@@ -1,0 +1,16 @@
+PODS:
+  - XCExcelSimilarView (0.1.0)
+
+DEPENDENCIES:
+  - XCExcelSimilarView (from `../`)
+
+EXTERNAL SOURCES:
+  XCExcelSimilarView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XCExcelSimilarView: fe2100cb184c59bad90d394e88f93f38db6bdcbf
+
+PODFILE CHECKSUM: ab695b101fcef68926bf5f6f34dd46d527d8b38a
+
+COCOAPODS: 1.10.1
