@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "XCExcelSimilarView.h"
+#import "XCNormalRowCell.h"
 
 FOUNDATION_EXPORT double XCExcelSimilarViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char XCExcelSimilarViewVersionString[];

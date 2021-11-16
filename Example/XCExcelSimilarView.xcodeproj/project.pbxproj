@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "xuecheng wang";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = RV53Y73NRS;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -494,6 +497,7 @@
 			baseConfigurationReference = B1AA3FBD90E34AF8A6A9311D /* Pods-XCExcelSimilarView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RV53Y73NRS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XCExcelSimilarView/XCExcelSimilarView-Prefix.pch";
 				INFOPLIST_FILE = "XCExcelSimilarView/XCExcelSimilarView-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = 361F4C05C6E72D8D6F440E90 /* Pods-XCExcelSimilarView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RV53Y73NRS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XCExcelSimilarView/XCExcelSimilarView-Prefix.pch";
 				INFOPLIST_FILE = "XCExcelSimilarView/XCExcelSimilarView-Info.plist";
