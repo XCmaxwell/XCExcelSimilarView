@@ -1,48 +1,56 @@
 //
-//  XCNormalRowCell.m
+//  XCExcelRowTableCell.m
 //  Pods
 //
 //  Created by MINI-01 on 2021/11/3.
 //
 
-#import "XCNormalRowCell.h"
+#import "XCExcelRowTableCell.h"
 #import "XCCollectionViewFlowLayout.h"
 #import "XCDefaultCollectionViewCell.h"
 
-@interface XCNormalRowCell ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
-@property (nonatomic, assign) BOOL bRegisterCell;
+@interface XCExcelRowTableCell ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @end
 
-@implementation XCNormalRowCell
-
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self.contentView addSubview:self.collectionView];
-    }
-    return self;
-}
+@implementation XCExcelRowTableCell
 
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
-    self.collectionView.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+    _collectionView.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
 }
 
 - (void)registerCollectionViewCell:(NSArray<__kindof UICollectionViewCell *> *)cellArray reusableView:(NSArray<__kindof UICollectionReusableView *> *)reusViewArray {
-    if (cellArray.count > 0) {
-        for (Class class in cellArray) {
-            [self.collectionView registerClass:class forCellWithReuseIdentifier:NSStringFromClass(class)];
-        }
+    if (_collectionView) {
+        return;
     }
-    if (reusViewArray.count > 0) {
-        for (Class class in reusViewArray) {
-            [self.collectionView registerClass:class forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass(class)];
+//    [self addSubview:self.collectionView];
+//    if (cellArray.count > 0) {
+//        for (NSDictionary *dic in cellArray) {
+//            [self.collectionView registerClass:class forCellWithReuseIdentifier:dic.k];
+//        }
+//    }
+//    if (reusViewArray.count > 0) {
+//        for (Class class in reusViewArray) {
+//            [self.collectionView registerClass:class forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass(class)];
+//        }
+//    }
+}
+
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView == self.collectionView) {
+        if ([self.delegate respondsToSelector:@selector(excelRowViewDidScroll:collectionType:)]) {
+            [self.delegate excelRowViewDidScroll:self.collectionView collectionType:XCCollectionTypeRowTableCell];
         }
     }
 }
 
-#pragma mark -
+#pragma mark - UICollectionViewDelegate & DataSource
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+
+}
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
@@ -54,16 +62,16 @@
 
  - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
      XCDefaultCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"XCDefaultCollectionViewCell" forIndexPath:indexPath];
-     cell.backgroundColor = [UIColor redColor];
+     cell.label.text = [NSString stringWithFormat:@"行列%zd", indexPath.row];
      return cell;
  }
 
  - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-     if (kind == UICollectionElementKindSectionHeader) {
-         XCDefaultReusableView * view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"XCDefaultReusableView" forIndexPath:indexPath];
-         view.backgroundColor = [UIColor yellowColor];
-         return view;
-     }
+//     if (kind == UICollectionElementKindSectionHeader) {
+//         XCDefaultReusableView * view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"XCDefaultReusableView" forIndexPath:indexPath];
+//         view.backgroundColor = [UIColor yellowColor];
+//         return view;
+//     }
      return nil;
  }
 
@@ -84,7 +92,6 @@
         dcLayout.minimumLineSpacing = CGFLOAT_MIN;
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:dcLayout];
         _collectionView.showsHorizontalScrollIndicator= false;
-        _collectionView.bounces = false;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
     }

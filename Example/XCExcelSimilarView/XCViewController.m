@@ -22,7 +22,7 @@
     self.view.backgroundColor = [UIColor redColor];
     self.excelView = [XCExcelSimilarView excelViewWithFrame:CGRectMake(0, 88, self.view.bounds.size.width, self.view.bounds.size.height-88) delegate:self style:UITableViewStyleGrouped];
     [self.view addSubview:self.excelView];
-    self.excelView.dataArray = @[@[@"01",@"02",@"03",@"04"],@[@"11",@"12",@"13",@"14"],@[@"21",@"22",@"23",@"24"]];
+    self.excelView.dataArray = @[@[@"01",@"02",@"03",@"04"],@[@"11",@"12",@"13",@"14"],@[@"21",@"22",@"23",@"24"],@[@"21",@"22",@"23",@"24"],@[@"21",@"22",@"23",@"24"]];
 }
 
 #pragma mark - XCExcelSimilarViewDelegate

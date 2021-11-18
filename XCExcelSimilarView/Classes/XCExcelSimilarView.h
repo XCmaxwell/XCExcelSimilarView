@@ -13,12 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol  XCExcelSimilarViewDelegate <NSObject>
 
 @optional
-/* 注册 UICollectionViewCell */
-- (nonnull NSArray<__kindof UICollectionViewCell *> *)excelRowView:(XCExcelSimilarView *)view registerCustomCellForCollectionView:(UICollectionView *)collectionView;
 
-- (nonnull NSArray<__kindof UICollectionReusableView *> *)excelRowView:(XCExcelSimilarView *)view registerCustomReusableViewForCollectionView:(UICollectionView *)collectionView;
-
-- (nonnull Class)excelRowView:(XCExcelSimilarView *)view customCellForCollectionView:(UICollectionView *)collectionView inColumn:(NSInteger)column;
+- (nonnull __kindof UICollectionViewCell *)excelRowView:(XCExcelSimilarView *)view customCellForCollectionView:(UICollectionView *)collectionView inColumn:(NSInteger)column;
 
 /* tableview 代理 */
 - (CGFloat)excelRowView:(XCExcelSimilarView *)view heightForRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -27,9 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (CGFloat)excelRowView:(XCExcelSimilarView *)view heightForHeaderInSection:(NSInteger)section;
 
-//- (UIView *)excelRowView:(XCExcelSimilarView *)view viewForHeaderInSection:(NSInteger)section;
-//
-//- (UIView *)excelRowView:(XCExcelSimilarView *)view viewForFooterInSection:(NSInteger)section;
+- (UIView *)excelRowView:(XCExcelSimilarView *)view viewForHeaderInSection:(NSInteger)section;
+
+- (UIView *)excelRowView:(XCExcelSimilarView *)view viewForFooterInSection:(NSInteger)section;
 
 
 @end
@@ -43,6 +39,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readwrite) NSArray<NSArray *> *dataArray;
 
 + (instancetype)excelViewWithFrame:(CGRect)frame delegate:(id<XCExcelSimilarViewDelegate>)delegate style:(UITableViewStyle)tableStyle;
+
+- (void)registerCustomClass:(nonnull __kindof UICollectionViewCell *)cellClass forCellReuseIdentifier:(NSString *)identifier;
+
+- (void)registerCustomClass:(nonnull __kindof UICollectionViewCell *)cellClass forSupplementaryHeaderReuseIdentifier:(NSString *)identifier;
 
 @end
 

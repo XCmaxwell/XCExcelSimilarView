@@ -6,12 +6,18 @@
 //
 
 #import "XCExcelSimilarView.h"
-#import "XCNormalRowCell.h"
+#import "XCExcelRowTableCell.h"
+#import "XCExcelRowHeaderView.h"
 #import "XCDefaultCollectionViewCell.h"
 
-@interface XCExcelSimilarView ()<UITableViewDelegate, UITableViewDataSource>
+
+@interface XCExcelSimilarView ()<UITableViewDelegate, UITableViewDataSource,XCExcelViewScrollDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) XCExcelRowHeaderView *headerView;
+@property (nonatomic, strong) NSMutableArray<__kindof UICollectionViewCell *> *cellArray;
+@property (nonatomic, strong) NSMutableArray<__kindof UICollectionReusableView *> *headerArray;
+@property (nonatomic, assign) CGFloat cacheOffsetX;
 
 @end
 
@@ -19,20 +25,52 @@
 
 + (instancetype)excelViewWithFrame:(CGRect)frame delegate:(id<XCExcelSimilarViewDelegate>)delegate style:(UITableViewStyle)tableStyle {
     XCExcelSimilarView *excelView = [[XCExcelSimilarView alloc] initWithFrame:frame];
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height) style:tableStyle];
+    XCExcelRowHeaderView *headerView = [[XCExcelRowHeaderView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 60)];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 60, frame.size.width, frame.size.height - 60) style:tableStyle];
     tableView.delegate = excelView;
     tableView.dataSource = excelView;
-    [tableView registerClass:[XCNormalRowCell class] forCellReuseIdentifier:XCNormalRowCellID];
+    [tableView registerClass:[XCExcelRowTableCell class] forCellReuseIdentifier:XCNormalRowCellID];
     [excelView addSubview:tableView];
     excelView.tableView = tableView;
-    
     excelView.delegate = delegate;
+    
+    headerView.delegate = excelView;
+    excelView.headerView = headerView;
+    [excelView addSubview:headerView];
     return excelView;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+    }
+    return self;
 }
 
 - (void)setDataArray:(NSArray<NSArray *> *)dataArray {
     _dataArray = dataArray;
     [self.tableView reloadData];
+}
+
+- (void)excelRowViewDidScroll:(UICollectionView *)scrollView collectionType:(XCCollectionType)type {
+    self.cacheOffsetX = scrollView.contentOffset.x;
+    for (XCExcelRowTableCell *cell in self.tableView.visibleCells) {
+        if (scrollView != cell.collectionView) {
+            cell.collectionView.contentOffset = CGPointMake(self.cacheOffsetX, 0);
+        }
+    }
+    if (type == XCCollectionTypeRowTableCell) {
+        self.headerView.collectionView.contentOffset = CGPointMake(self.cacheOffsetX, 0);
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView == self.tableView) {
+        for (XCExcelRowTableCell *cell in self.tableView.visibleCells) {
+            cell.collectionView.contentOffset = CGPointMake(self.cacheOffsetX, 0);
+        }
+    }
 }
 
 #pragma mark - UITableViewDelegate
@@ -45,20 +83,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XCNormalRowCell *cell = [tableView dequeueReusableCellWithIdentifier:XCNormalRowCellID];
-    NSArray *cellArray;
-    NSArray *reusViewArray;
-    if ([self.delegate respondsToSelector:@selector(excelRowView:registerCustomCellForCollectionView:)]) {
-        cellArray = [self.delegate excelRowView:self registerCustomCellForCollectionView:cell.collectionView];
-    } else {
-        cellArray = @[[XCDefaultCollectionViewCell class]];
-    }
-    if ([self.delegate respondsToSelector:@selector(excelRowView:registerCustomReusableViewForCollectionView:)] ) {
-        reusViewArray = [self.delegate excelRowView:self registerCustomReusableViewForCollectionView:cell.collectionView];
-    } else {
-        reusViewArray = @[[XCDefaultReusableView class]];
-    }
-    [cell registerCollectionViewCell:cellArray reusableView:reusViewArray];
+    XCExcelRowTableCell *cell = [tableView dequeueReusableCellWithIdentifier:XCNormalRowCellID];
+    cell.delegate = self;
+//    [cell registerCollectionViewCell:self.cellArray reusableView:self.headerArray];
     return cell;
 }
 
@@ -96,4 +123,5 @@
     }
     return nil;
 }
+
 @end

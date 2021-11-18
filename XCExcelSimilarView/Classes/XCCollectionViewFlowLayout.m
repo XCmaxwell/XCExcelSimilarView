@@ -9,4 +9,8 @@
 
 @implementation XCCollectionViewFlowLayout
 
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBound {
+    return YES;
+}
+
 @end
