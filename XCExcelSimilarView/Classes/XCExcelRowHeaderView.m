@@ -7,7 +7,7 @@
 
 #import "XCExcelRowHeaderView.h"
 #import "XCCollectionViewFlowLayout.h"
-#import "XCDefaultCollectionViewCell.h"
+//#import "XCDefaultCollectionViewCell.h"
 
 @interface XCExcelRowHeaderView ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -47,18 +47,18 @@
 }
 
  - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-     XCDefaultCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"XCDefaultCollectionViewCell" forIndexPath:indexPath];
-     cell.label.text = [NSString stringWithFormat:@"头%zd", indexPath.row];
+     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"XCDefaultCollectionViewCell" forIndexPath:indexPath];
+//     cell.label.text = [NSString stringWithFormat:@"头%zd", indexPath.row];
      cell.backgroundColor = [UIColor orangeColor];
      return cell;
  }
 
  - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-     if (kind == UICollectionElementKindSectionHeader) {
-         XCDefaultReusableView * view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"XCDefaultReusableView" forIndexPath:indexPath];
-         view.backgroundColor = [UIColor yellowColor];
-         return view;
-     }
+//     if (kind == UICollectionElementKindSectionHeader) {
+//         XCDefaultReusableView * view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"XCDefaultReusableView" forIndexPath:indexPath];
+//         view.backgroundColor = [UIColor yellowColor];
+//         return view;
+//     }
      return nil;
  }
 
@@ -81,8 +81,8 @@
         _collectionView.showsHorizontalScrollIndicator= false;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
-        [_collectionView registerClass:[XCDefaultReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"XCDefaultReusableView"];
-        [_collectionView registerClass:[XCDefaultCollectionViewCell class] forCellWithReuseIdentifier:@"XCDefaultCollectionViewCell"];
+//        [_collectionView registerClass:[XCDefaultReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"XCDefaultReusableView"];
+//        [_collectionView registerClass:[XCDefaultCollectionViewCell class] forCellWithReuseIdentifier:@"XCDefaultCollectionViewCell"];
     }
     return _collectionView;
 }

@@ -7,7 +7,6 @@
 
 #import "XCExcelRowTableCell.h"
 #import "XCCollectionViewFlowLayout.h"
-#import "XCDefaultCollectionViewCell.h"
 
 
 @interface XCExcelRowTableCell ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
@@ -61,8 +60,8 @@
 }
 
  - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-     XCDefaultCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"XCDefaultCollectionViewCell" forIndexPath:indexPath];
-     cell.label.text = [NSString stringWithFormat:@"行列%zd", indexPath.row];
+     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"XCDefaultCollectionViewCell" forIndexPath:indexPath];
+//     cell.label.text = [NSString stringWithFormat:@"行列%zd", indexPath.row];
      return cell;
  }
 

@@ -8,7 +8,7 @@
 #import "XCExcelSimilarView.h"
 #import "XCExcelRowTableCell.h"
 #import "XCExcelRowHeaderView.h"
-#import "XCDefaultCollectionViewCell.h"
+//#import "XCDefaultCollectionViewCell.h"
 
 
 @interface XCExcelSimilarView ()<UITableViewDelegate, UITableViewDataSource,XCExcelViewScrollDelegate>
