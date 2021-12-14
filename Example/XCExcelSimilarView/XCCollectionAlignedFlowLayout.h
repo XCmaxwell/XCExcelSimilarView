@@ -20,13 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol XCCollectionViewDelegateAlignedLayout <UICollectionViewDelegateFlowLayout>
 
-//- (UICollectionViewLayoutAttributes *)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout forAtIndexPath:(NSIndexPath *)indexPath;
-
 @end
 
 @interface XCCollectionAlignedFlowLayout : UICollectionViewFlowLayout
 
-@property (nonatomic, assign) XCCollectionViewAlignedLayout alignedType;
+@property (nonatomic, assign, readonly) XCCollectionViewAlignedLayout alignedType;
 
 - (instancetype)initWithAlignType:(XCCollectionViewAlignedLayout)alignType;
 
