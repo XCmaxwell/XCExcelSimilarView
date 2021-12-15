@@ -18,5 +18,15 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "XCExcelSimilarView/Classes/**/*"
+  "source_files": "XCExcelSimilarView/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "AlignedLayout",
+      "source_files": "XCExcelSimilarView/Classes/AlignedLayout/*.{h,m}"
+    },
+    {
+      "name": "ExcelLayout",
+      "source_files": "XCExcelSimilarView/Classes/ExcelLayout/*.{h,m}"
+    }
+  ]
 }

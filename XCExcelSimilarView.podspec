@@ -32,6 +32,14 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'XCExcelSimilarView/Classes/**/*'
   
+  s.subspec 'AlignedLayout' do |aligned|
+    aligned.source_files = 'XCExcelSimilarView/Classes/AlignedLayout/*.{h,m}'
+  end
+  
+  s.subspec 'ExcelLayout' do |excel|
+    excel.source_files = 'XCExcelSimilarView/Classes/ExcelLayout/*.{h,m}'
+  end
+  
   # s.resource_bundles = {
   #   'XCExcelSimilarView' => ['XCExcelSimilarView/Assets/*.png']
   # }
@@ -39,4 +47,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
 end

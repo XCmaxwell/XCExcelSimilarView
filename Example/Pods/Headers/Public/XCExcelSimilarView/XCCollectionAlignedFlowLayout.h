@@ -1,0 +1,1 @@
+../../../../../XCExcelSimilarView/Classes/AlignedLayout/XCCollectionAlignedFlowLayout.h

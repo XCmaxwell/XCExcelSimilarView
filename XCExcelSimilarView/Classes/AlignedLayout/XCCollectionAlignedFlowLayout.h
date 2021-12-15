@@ -20,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol XCCollectionViewDelegateAlignedLayout <UICollectionViewDelegateFlowLayout>
 
+@optional
+
+- (void)layout:(UICollectionViewLayout*)collectionViewLayout customAttributes:(UICollectionViewLayoutAttributes *)attributes forDecorationViewAtIndexPath:(NSIndexPath *)indexPath;
+
+- (void)layout:(UICollectionViewLayout*)collectionViewLayout customAttributes:(UICollectionViewLayoutAttributes *)attributes forSupplementaryViewAtIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
 @interface XCCollectionAlignedFlowLayout : UICollectionViewFlowLayout

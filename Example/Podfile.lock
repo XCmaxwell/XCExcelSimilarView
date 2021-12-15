@@ -1,5 +1,9 @@
 PODS:
-  - XCExcelSimilarView (0.1.0)
+  - XCExcelSimilarView (0.1.0):
+    - XCExcelSimilarView/AlignedLayout (= 0.1.0)
+    - XCExcelSimilarView/ExcelLayout (= 0.1.0)
+  - XCExcelSimilarView/AlignedLayout (0.1.0)
+  - XCExcelSimilarView/ExcelLayout (0.1.0)
 
 DEPENDENCIES:
   - XCExcelSimilarView (from `../`)
@@ -9,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XCExcelSimilarView: fe2100cb184c59bad90d394e88f93f38db6bdcbf
+  XCExcelSimilarView: 7cc1540a0329523e798d22ed3aa934f68005446a
 
 PODFILE CHECKSUM: eb67bc13d76d866c11013b4e0703cb6a1e2c8bf8
 
