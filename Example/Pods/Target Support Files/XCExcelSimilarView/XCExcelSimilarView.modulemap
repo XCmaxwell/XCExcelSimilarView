@@ -1,6 +1,0 @@
-framework module XCExcelSimilarView {
-  umbrella header "XCExcelSimilarView-umbrella.h"
-
-  export *
-  module * { export * }
-}

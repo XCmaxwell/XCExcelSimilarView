@@ -95,7 +95,7 @@
 
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        XCCollectionAlignedFlowLayout *dcLayout = [[XCCollectionAlignedFlowLayout alloc] initWithAlignType:XCCollectionViewAlignedLayoutMiddle];
+        XCCollectionAlignedFlowLayout *dcLayout = [[XCCollectionAlignedFlowLayout alloc] initWithAlignType:XCCollectionViewAlignedLayoutLeft];
 
         dcLayout.minimumLineSpacing = 5.f;
         dcLayout.minimumInteritemSpacing = 10.f;
