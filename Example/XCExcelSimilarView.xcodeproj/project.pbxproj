@@ -10,6 +10,7 @@
 		1A455913F5AEF2B68CEDAC67 /* libPods-XCExcelSimilarView_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EA6E1C146284A44EFD3D4A /* libPods-XCExcelSimilarView_Tests.a */; };
 		3E28E5D7274630880075AD9B /* XCDefaultCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E28E5D6274630880075AD9B /* XCDefaultCollectionViewCell.m */; };
 		3E81D2A22769F1CA008BCA86 /* XCAlignedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81D2A12769F1CA008BCA86 /* XCAlignedViewController.m */; };
+		3ED2C39D276C24AE00D2FFB1 /* XCEXcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED2C39C276C24AE00D2FFB1 /* XCEXcelViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 		3E81D2A02769F1CA008BCA86 /* XCAlignedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCAlignedViewController.h; sourceTree = "<group>"; };
 		3E81D2A12769F1CA008BCA86 /* XCAlignedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCAlignedViewController.m; sourceTree = "<group>"; };
 		3ED2C399276B2FDA00D2FFB1 /* ConstHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstHeader.h; sourceTree = "<group>"; };
+		3ED2C39B276C24AE00D2FFB1 /* XCEXcelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCEXcelViewController.h; sourceTree = "<group>"; };
+		3ED2C39C276C24AE00D2FFB1 /* XCEXcelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCEXcelViewController.m; sourceTree = "<group>"; };
 		458E610EFADB9247DAA38728 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XCExcelSimilarView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCExcelSimilarView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		3ED2C39A276C247A00D2FFB1 /* Excel */ = {
+			isa = PBXGroup;
+			children = (
+				3ED2C39B276C24AE00D2FFB1 /* XCEXcelViewController.h */,
+				3ED2C39C276C24AE00D2FFB1 /* XCEXcelViewController.m */,
+			);
+			name = Excel;
+			sourceTree = "<group>";
+		};
 		4A1B0D7634111F6F62BC8A75 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +186,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XCViewController.h */,
 				6003F5A6195388D20070C39A /* XCViewController.m */,
+				3ED2C39A276C247A00D2FFB1 /* Excel */,
 				3ED2C397276B2EA800D2FFB1 /* AlignDemo */,
 				3ED2C398276B2FB400D2FFB1 /* View */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -381,6 +394,7 @@
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				3E81D2A22769F1CA008BCA86 /* XCAlignedViewController.m in Sources */,
 				3E28E5D7274630880075AD9B /* XCDefaultCollectionViewCell.m in Sources */,
+				3ED2C39D276C24AE00D2FFB1 /* XCEXcelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

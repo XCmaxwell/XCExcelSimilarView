@@ -48,7 +48,7 @@
 }
 
  - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-     XCDefaultCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"XCDefaultCollectionViewCell" forIndexPath:indexPath];
+     XCDefaultCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kAlinedCollectionCell forIndexPath:indexPath];
      cell.label.text = [NSString stringWithFormat:@"%ld-%ld%@",(long)indexPath.section, (long)indexPath.row, self.dataArray[indexPath.section][indexPath.row]];
      //frame布局cell复用时，label的frame也会有缓存，所以重设frame很重要
      cell.label.frame = cell.bounds;
@@ -86,8 +86,8 @@
 
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        XCCollectionAlignedFlowLayout *dcLayout = [[XCCollectionAlignedFlowLayout alloc] initWithAlignType:self.layoutType];
-        _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:dcLayout];
+        XCCollectionAlignedFlowLayout *layout = [[XCCollectionAlignedFlowLayout alloc] initWithAlignType:self.layoutType];
+        _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         [_collectionView registerClass:[XCDefaultCollectionViewCell class] forCellWithReuseIdentifier:kAlinedCollectionCell];

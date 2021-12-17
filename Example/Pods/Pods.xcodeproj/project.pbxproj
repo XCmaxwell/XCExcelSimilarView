@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1958A7C922280B806EF2409E056206E3 /* XCExcelSimilarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6016E4A63C109B3C0406723938B40C1 /* XCExcelSimilarView-dummy.m */; };
-		1C5C965417CF7736A0EDDD395B78B358 /* XCExcelSimilarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EF2A5FC88C2FF6B029B2DA4A6A4DF5 /* XCExcelSimilarView.m */; };
-		3215879236719F27AB2BAEE0BC52BE91 /* XCCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A637AC652179AD28289BD6B12E21CA /* XCCollectionViewFlowLayout.m */; };
-		4ADE677BBF23B92C02F745F0A0BC642F /* XCExcelRowTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9441F05A9D0E9797241ABD9F8FFA534 /* XCExcelRowTableCell.m */; };
-		52E3960680ACD66989FB78936974F383 /* XCExcelRowHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5680E8295EB47BBC01B4380B87356909 /* XCExcelRowHeaderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5BEE508768A1BAC663A9617266E914D6 /* XCExcelSimilarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E1414C4509057E51763E932906077E /* XCExcelSimilarView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5EDA6095977E5FD4765344925D6DE4C3 /* XCCollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6240EDC65AEA8DFDBD35EB2FF419DD2A /* XCCollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		70A2FE705E6AB492F86F0FB317F12D7A /* XCExcelViewScrollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D686BF14980B28764C620A321EBF21A /* XCExcelViewScrollDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		91D62467824663B1614F4014A1A67EC4 /* XCCollectionAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 034762A3E9AE98B3CDFBB64A6D3FCC58 /* XCCollectionAlignedFlowLayout.m */; };
+		04AFC1264682C9818BED91B549D8A579 /* XCFixedColumnLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A39BB2869FC0EB395A9D40A2DAF9651E /* XCFixedColumnLayout.m */; };
+		484277D45DB7E9A970B109D5796A0938 /* XCExcelRowTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0436FF15019972713C1886E65D76E1CD /* XCExcelRowTableCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		73C520527F0EDB17344F6E3BC7729288 /* XCFixedColumnLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC061121F05A0B0A5BBA596F56FC85B /* XCFixedColumnLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7902EE35B3969C64E36994F8073E6783 /* XCExcelRowHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB091305EE6626DB648471B96BCBFE3 /* XCExcelRowHeaderView.m */; };
+		79D42BC2D4815794EAE5E02ACE54E42C /* XCExcelSimilarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14A837FF69EEA27F7E0C71A5E046AECA /* XCExcelSimilarView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CB3F91914C4B7B18757FE1D5E9B78D1 /* XCExcelSimilarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C698AF5048FEA9A4B2831C313F52A9B /* XCExcelSimilarView.m */; };
+		8A03DE49BA7998BEC67C410FB4B18B01 /* XCCollectionAlignedFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 034762A3E9AE98B3CDFBB64A6D3FCC58 /* XCCollectionAlignedFlowLayout.m */; };
+		95A7F4E8244CF6695CCF08C57BBD7E6A /* XCCollectionAlignedFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2E2F47F0373C453F1184E7A6304161 /* XCCollectionAlignedFlowLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		97BCCA405B5A00F22DB613F6611BA848 /* Pods-XCExcelSimilarView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD619EDEB2B4F6322C6296AE558FA82 /* Pods-XCExcelSimilarView_Tests-dummy.m */; };
-		99089663506AE7FC4CE572420ED07E10 /* XCExcelRowHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CE5B0E08A7E67223CA4D069057E51F /* XCExcelRowHeaderView.m */; };
-		A34019DCE5A874E55BA34BD623037C87 /* XCExcelRowTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C777C85BAF7F264B5FD6A8554FE378 /* XCExcelRowTableCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9DD8B0F4F33114BF61663DAC06062822 /* XCExcelSimilarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6016E4A63C109B3C0406723938B40C1 /* XCExcelSimilarView-dummy.m */; };
 		C55E9541FED127B318883C03136893F8 /* Pods-XCExcelSimilarView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6A8ED66BC28EDE990658251D04787F /* Pods-XCExcelSimilarView_Example-dummy.m */; };
-		E83E1D3CE786F693587034E408964FAE /* XCCollectionAlignedFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2E2F47F0373C453F1184E7A6304161 /* XCCollectionAlignedFlowLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D87214E999A3954AF29843BC840AAAD9 /* XCExcelRowTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9EEE8FA51AD63955877404B5F96EF /* XCExcelRowTableCell.m */; };
+		E799CA2283D5417A0D356F09AE3906EE /* XCExcelViewScrollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 111EA8ABD5E228787C1288E16BE87A72 /* XCExcelViewScrollDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB01A8FC7C9543FAE6ED4CB48E30A569 /* XCExcelRowHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5922395D6F989356735594739CCF9EDE /* XCExcelRowHeaderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,37 +42,37 @@
 
 /* Begin PBXFileReference section */
 		034762A3E9AE98B3CDFBB64A6D3FCC58 /* XCCollectionAlignedFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XCCollectionAlignedFlowLayout.m; sourceTree = "<group>"; };
+		0436FF15019972713C1886E65D76E1CD /* XCExcelRowTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCExcelRowTableCell.h; sourceTree = "<group>"; };
 		0A40AC82DFFA20CD8947648CC808E8E3 /* Pods-XCExcelSimilarView_Tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-XCExcelSimilarView_Tests"; path = "libPods-XCExcelSimilarView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		14E1414C4509057E51763E932906077E /* XCExcelSimilarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCExcelSimilarView.h; sourceTree = "<group>"; };
+		111EA8ABD5E228787C1288E16BE87A72 /* XCExcelViewScrollDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCExcelViewScrollDelegate.h; sourceTree = "<group>"; };
+		14A837FF69EEA27F7E0C71A5E046AECA /* XCExcelSimilarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCExcelSimilarView.h; sourceTree = "<group>"; };
+		1DB091305EE6626DB648471B96BCBFE3 /* XCExcelRowHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XCExcelRowHeaderView.m; sourceTree = "<group>"; };
 		39A24E7DA21C091E79040E54700215D0 /* Pods-XCExcelSimilarView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCExcelSimilarView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3CCC13FD6FD176B838BD80C30062E8F5 /* XCExcelSimilarView */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = XCExcelSimilarView; path = libXCExcelSimilarView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D686BF14980B28764C620A321EBF21A /* XCExcelViewScrollDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCExcelViewScrollDelegate.h; sourceTree = "<group>"; };
 		3FA327E179C5332B0C258396EEDB1A11 /* XCExcelSimilarView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCExcelSimilarView.debug.xcconfig; sourceTree = "<group>"; };
 		4BD619EDEB2B4F6322C6296AE558FA82 /* Pods-XCExcelSimilarView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCExcelSimilarView_Tests-dummy.m"; sourceTree = "<group>"; };
 		4D90B2534212FEC9C25B3503ADA0BA37 /* Pods-XCExcelSimilarView_Example */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-XCExcelSimilarView_Example"; path = "libPods-XCExcelSimilarView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5680E8295EB47BBC01B4380B87356909 /* XCExcelRowHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCExcelRowHeaderView.h; sourceTree = "<group>"; };
+		5922395D6F989356735594739CCF9EDE /* XCExcelRowHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCExcelRowHeaderView.h; sourceTree = "<group>"; };
+		5C698AF5048FEA9A4B2831C313F52A9B /* XCExcelSimilarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XCExcelSimilarView.m; sourceTree = "<group>"; };
 		5CF8D8E4E8C6AA71EED45D156A0E4723 /* XCExcelSimilarView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCExcelSimilarView.release.xcconfig; sourceTree = "<group>"; };
-		6240EDC65AEA8DFDBD35EB2FF419DD2A /* XCCollectionViewFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		63F83359F2D41EB58BD8901FE6DDB678 /* XCExcelSimilarView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XCExcelSimilarView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		63F83359F2D41EB58BD8901FE6DDB678 /* XCExcelSimilarView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XCExcelSimilarView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6F6A8ED66BC28EDE990658251D04787F /* Pods-XCExcelSimilarView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XCExcelSimilarView_Example-dummy.m"; sourceTree = "<group>"; };
 		74675673FC90DBAAC018926842FEEF98 /* Pods-XCExcelSimilarView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCExcelSimilarView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		74EF2A5FC88C2FF6B029B2DA4A6A4DF5 /* XCExcelSimilarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XCExcelSimilarView.m; sourceTree = "<group>"; };
 		7599F2A3F59B6C79F2F3EB404FEF9FDE /* Pods-XCExcelSimilarView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCExcelSimilarView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		77FD509E8972493A6118D3F84B11580B /* Pods-XCExcelSimilarView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCExcelSimilarView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9547B742BBEE6874F8D71376176FD897 /* XCExcelSimilarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCExcelSimilarView-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CE9EEE8FA51AD63955877404B5F96EF /* XCExcelRowTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XCExcelRowTableCell.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A39BB2869FC0EB395A9D40A2DAF9651E /* XCFixedColumnLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XCFixedColumnLayout.m; sourceTree = "<group>"; };
 		A6016E4A63C109B3C0406723938B40C1 /* XCExcelSimilarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCExcelSimilarView-dummy.m"; sourceTree = "<group>"; };
 		AF1FBF81DC5D01E50E14AFBD7F2B87DD /* Pods-XCExcelSimilarView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCExcelSimilarView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B1B5510937329698E9907BC9E6DD65BC /* Pods-XCExcelSimilarView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCExcelSimilarView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B30FC116946B34165CE269580613C862 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B4C777C85BAF7F264B5FD6A8554FE378 /* XCExcelRowTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCExcelRowTableCell.h; sourceTree = "<group>"; };
-		C9441F05A9D0E9797241ABD9F8FFA534 /* XCExcelRowTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XCExcelRowTableCell.m; sourceTree = "<group>"; };
+		B30FC116946B34165CE269580613C862 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CCC061121F05A0B0A5BBA596F56FC85B /* XCFixedColumnLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCFixedColumnLayout.h; sourceTree = "<group>"; };
 		D0C75A4923204BA317BDE0478214A95E /* Pods-XCExcelSimilarView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCExcelSimilarView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D0CE5B0E08A7E67223CA4D069057E51F /* XCExcelRowHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XCExcelRowHeaderView.m; sourceTree = "<group>"; };
 		DB2E2F47F0373C453F1184E7A6304161 /* XCCollectionAlignedFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XCCollectionAlignedFlowLayout.h; sourceTree = "<group>"; };
-		F0A637AC652179AD28289BD6B12E21CA /* XCCollectionViewFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XCCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		F622F191232A5BCE2650FBDA9F5830C3 /* Pods-XCExcelSimilarView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XCExcelSimilarView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F8F3D39443BAB924357518DC97218C56 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F8F3D39443BAB924357518DC97218C56 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,28 +112,11 @@
 			path = "Example/Pods/Target Support Files/XCExcelSimilarView";
 			sourceTree = "<group>";
 		};
-		3F7A3519811625BAE2064677C296939C /* ExcelLayout */ = {
-			isa = PBXGroup;
-			children = (
-				6240EDC65AEA8DFDBD35EB2FF419DD2A /* XCCollectionViewFlowLayout.h */,
-				F0A637AC652179AD28289BD6B12E21CA /* XCCollectionViewFlowLayout.m */,
-				5680E8295EB47BBC01B4380B87356909 /* XCExcelRowHeaderView.h */,
-				D0CE5B0E08A7E67223CA4D069057E51F /* XCExcelRowHeaderView.m */,
-				B4C777C85BAF7F264B5FD6A8554FE378 /* XCExcelRowTableCell.h */,
-				C9441F05A9D0E9797241ABD9F8FFA534 /* XCExcelRowTableCell.m */,
-				14E1414C4509057E51763E932906077E /* XCExcelSimilarView.h */,
-				74EF2A5FC88C2FF6B029B2DA4A6A4DF5 /* XCExcelSimilarView.m */,
-				3D686BF14980B28764C620A321EBF21A /* XCExcelViewScrollDelegate.h */,
-			);
-			name = ExcelLayout;
-			path = XCExcelSimilarView/Classes/ExcelLayout;
-			sourceTree = "<group>";
-		};
 		47275479918843FEF18B68568BE98CA2 /* XCExcelSimilarView */ = {
 			isa = PBXGroup;
 			children = (
 				53A52BE2EBE3365BA2A000B34755F105 /* AlignedLayout */,
-				3F7A3519811625BAE2064677C296939C /* ExcelLayout */,
+				C2B14A8492574C87F0A3B37FF52AD87F /* ExcelLayout */,
 				E5807638E35A109DEB2088D0F99AD7CF /* Pod */,
 				03D3426E2F3555CD25129FCBF821BE3C /* Support Files */,
 			);
@@ -191,6 +174,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		C2B14A8492574C87F0A3B37FF52AD87F /* ExcelLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5922395D6F989356735594739CCF9EDE /* XCExcelRowHeaderView.h */,
+				1DB091305EE6626DB648471B96BCBFE3 /* XCExcelRowHeaderView.m */,
+				0436FF15019972713C1886E65D76E1CD /* XCExcelRowTableCell.h */,
+				9CE9EEE8FA51AD63955877404B5F96EF /* XCExcelRowTableCell.m */,
+				14A837FF69EEA27F7E0C71A5E046AECA /* XCExcelSimilarView.h */,
+				5C698AF5048FEA9A4B2831C313F52A9B /* XCExcelSimilarView.m */,
+				111EA8ABD5E228787C1288E16BE87A72 /* XCExcelViewScrollDelegate.h */,
+				CCC061121F05A0B0A5BBA596F56FC85B /* XCFixedColumnLayout.h */,
+				A39BB2869FC0EB395A9D40A2DAF9651E /* XCFixedColumnLayout.m */,
+			);
+			name = ExcelLayout;
+			path = XCExcelSimilarView/Classes/ExcelLayout;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -242,16 +242,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E51CC00DDCCBEE0F5C896405B19E004 /* Headers */ = {
+		6A317F010B234210871AFFCC2A55D215 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E83E1D3CE786F693587034E408964FAE /* XCCollectionAlignedFlowLayout.h in Headers */,
-				5EDA6095977E5FD4765344925D6DE4C3 /* XCCollectionViewFlowLayout.h in Headers */,
-				52E3960680ACD66989FB78936974F383 /* XCExcelRowHeaderView.h in Headers */,
-				A34019DCE5A874E55BA34BD623037C87 /* XCExcelRowTableCell.h in Headers */,
-				5BEE508768A1BAC663A9617266E914D6 /* XCExcelSimilarView.h in Headers */,
-				70A2FE705E6AB492F86F0FB317F12D7A /* XCExcelViewScrollDelegate.h in Headers */,
+				95A7F4E8244CF6695CCF08C57BBD7E6A /* XCCollectionAlignedFlowLayout.h in Headers */,
+				EB01A8FC7C9543FAE6ED4CB48E30A569 /* XCExcelRowHeaderView.h in Headers */,
+				484277D45DB7E9A970B109D5796A0938 /* XCExcelRowTableCell.h in Headers */,
+				79D42BC2D4815794EAE5E02ACE54E42C /* XCExcelSimilarView.h in Headers */,
+				E799CA2283D5417A0D356F09AE3906EE /* XCExcelViewScrollDelegate.h in Headers */,
+				73C520527F0EDB17344F6E3BC7729288 /* XCFixedColumnLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +305,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADABF40CB3BAEF4724DE267A52FE8684 /* Build configuration list for PBXNativeTarget "XCExcelSimilarView" */;
 			buildPhases = (
-				2E51CC00DDCCBEE0F5C896405B19E004 /* Headers */,
-				4DFFDA6865A9BA3255CE550ADC728C76 /* Sources */,
+				6A317F010B234210871AFFCC2A55D215 /* Headers */,
+				5DD14753C65BDE2F36E315B707E75DDA /* Sources */,
 				E19245BD490B75D50A396FFBC5782586 /* Frameworks */,
 			);
 			buildRules = (
@@ -356,16 +356,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DFFDA6865A9BA3255CE550ADC728C76 /* Sources */ = {
+		5DD14753C65BDE2F36E315B707E75DDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D62467824663B1614F4014A1A67EC4 /* XCCollectionAlignedFlowLayout.m in Sources */,
-				3215879236719F27AB2BAEE0BC52BE91 /* XCCollectionViewFlowLayout.m in Sources */,
-				99089663506AE7FC4CE572420ED07E10 /* XCExcelRowHeaderView.m in Sources */,
-				4ADE677BBF23B92C02F745F0A0BC642F /* XCExcelRowTableCell.m in Sources */,
-				1C5C965417CF7736A0EDDD395B78B358 /* XCExcelSimilarView.m in Sources */,
-				1958A7C922280B806EF2409E056206E3 /* XCExcelSimilarView-dummy.m in Sources */,
+				8A03DE49BA7998BEC67C410FB4B18B01 /* XCCollectionAlignedFlowLayout.m in Sources */,
+				7902EE35B3969C64E36994F8073E6783 /* XCExcelRowHeaderView.m in Sources */,
+				D87214E999A3954AF29843BC840AAAD9 /* XCExcelRowTableCell.m in Sources */,
+				7CB3F91914C4B7B18757FE1D5E9B78D1 /* XCExcelSimilarView.m in Sources */,
+				9DD8B0F4F33114BF61663DAC06062822 /* XCExcelSimilarView-dummy.m in Sources */,
+				04AFC1264682C9818BED91B549D8A579 /* XCFixedColumnLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,8 +645,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

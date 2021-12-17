@@ -8,6 +8,7 @@
 
 #import "XCViewController.h"
 #import "XCAlignedViewController.h"
+#import "XCEXcelViewController.h"
 #import "ConstHeader.h"
 
 @interface XCViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -60,7 +61,7 @@
         }
         [self.navigationController pushViewController:vc animated:YES];
     } else {
-        
+        [self.navigationController pushViewController:[XCEXcelViewController new] animated:YES];
     }
 }
 

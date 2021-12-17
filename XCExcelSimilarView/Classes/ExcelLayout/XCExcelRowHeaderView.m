@@ -6,8 +6,6 @@
 //
 
 #import "XCExcelRowHeaderView.h"
-#import "XCCollectionViewFlowLayout.h"
-//#import "XCDefaultCollectionViewCell.h"
 
 @interface XCExcelRowHeaderView ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -73,7 +71,7 @@
 #pragma mark - Getter
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        XCCollectionViewFlowLayout *dcLayout = [XCCollectionViewFlowLayout new];
+        UICollectionViewFlowLayout *dcLayout = [UICollectionViewFlowLayout new];
         dcLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         dcLayout.sectionHeadersPinToVisibleBounds = true;
         dcLayout.minimumLineSpacing = CGFLOAT_MIN;
