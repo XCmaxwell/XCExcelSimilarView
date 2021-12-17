@@ -45,6 +45,7 @@
 		3E28E5D6274630880075AD9B /* XCDefaultCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDefaultCollectionViewCell.m; sourceTree = "<group>"; };
 		3E81D2A02769F1CA008BCA86 /* XCAlignedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCAlignedViewController.h; sourceTree = "<group>"; };
 		3E81D2A12769F1CA008BCA86 /* XCAlignedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCAlignedViewController.m; sourceTree = "<group>"; };
+		3ED2C399276B2FDA00D2FFB1 /* ConstHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstHeader.h; sourceTree = "<group>"; };
 		458E610EFADB9247DAA38728 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* XCExcelSimilarView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCExcelSimilarView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +102,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ED2C397276B2EA800D2FFB1 /* AlignDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3E81D2A02769F1CA008BCA86 /* XCAlignedViewController.h */,
+				3E81D2A12769F1CA008BCA86 /* XCAlignedViewController.m */,
+			);
+			name = AlignDemo;
+			sourceTree = "<group>";
+		};
+		3ED2C398276B2FB400D2FFB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3ED2C399276B2FDA00D2FFB1 /* ConstHeader.h */,
+				3E28E5D5274630880075AD9B /* XCDefaultCollectionViewCell.h */,
+				3E28E5D6274630880075AD9B /* XCDefaultCollectionViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		4A1B0D7634111F6F62BC8A75 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,10 +174,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XCViewController.h */,
 				6003F5A6195388D20070C39A /* XCViewController.m */,
-				3E81D2A02769F1CA008BCA86 /* XCAlignedViewController.h */,
-				3E81D2A12769F1CA008BCA86 /* XCAlignedViewController.m */,
-				3E28E5D5274630880075AD9B /* XCDefaultCollectionViewCell.h */,
-				3E28E5D6274630880075AD9B /* XCDefaultCollectionViewCell.m */,
+				3ED2C397276B2EA800D2FFB1 /* AlignDemo */,
+				3ED2C398276B2FB400D2FFB1 /* View */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,

@@ -8,6 +8,7 @@
 
 #import "XCViewController.h"
 #import "XCAlignedViewController.h"
+#import "ConstHeader.h"
 
 @interface XCViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableview;
@@ -17,11 +18,12 @@
 @implementation XCViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"自定义CollectionViewLayout";
     [self.view addSubview:self.tableview];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DDDUITableViewCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kDemolistTableViewCell forIndexPath:indexPath];
     cell.textLabel.text = self.dataSource[indexPath.section][indexPath.row];
     return cell;
 }
@@ -38,14 +40,20 @@
     XCAlignedViewController *vc = [XCAlignedViewController new];
     if (indexPath.section == 0) {
         switch (indexPath.row) {
-            case 0:
+            case 0:{
+                vc.title = @"左对齐";
                 vc.layoutType = XCCollectionViewAlignedLayoutLeft;
+            }
                 break;
-            case 1:
+            case 1:{
+                vc.title = @"居中";
                 vc.layoutType = XCCollectionViewAlignedLayoutMiddle;
+            }
                 break;
-            case 2:
+            case 2:{
+                vc.title = @"右对齐";
                 vc.layoutType = XCCollectionViewAlignedLayoutRight;
+            }
                 break;
             default:
                 break;
@@ -60,12 +68,13 @@
 - (UITableView *)tableview {
     if (!_tableview) {
         _tableview = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-        [_tableview registerClass:[UITableViewCell class] forCellReuseIdentifier:@"DDDUITableViewCell"];
+        [_tableview registerClass:[UITableViewCell class] forCellReuseIdentifier:kDemolistTableViewCell];
         _tableview.delegate = self;
         _tableview.dataSource = self;
     }
     return _tableview;
 }
+
 - (NSArray *)dataSource {
     if (!_dataSource) {
         _dataSource = @[

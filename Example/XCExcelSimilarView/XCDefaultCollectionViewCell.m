@@ -15,8 +15,7 @@
         self.label.textAlignment = NSTextAlignmentCenter;
         self.label.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
         self.label.font = [UIFont systemFontOfSize:22];
-        self.label.backgroundColor = [UIColor yellowColor];
-        self.contentView.backgroundColor = [UIColor orangeColor];
+        self.label.backgroundColor = [UIColor lightGrayColor];
         [self.contentView addSubview:self.label];
     }
     return self;
